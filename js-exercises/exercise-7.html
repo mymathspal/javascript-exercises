@@ -17,18 +17,56 @@
                 // short way to write an if statement
             !name ? console.log("Hello, there!"):console.log(`Hello, ${name}!`);
             }
+
             greet("Nana");
 
             greet("Simon");
 
             greet();
+
             greet();
 
 
-            // exercise 7d - 
+            // exercise 7d - 7f
 
             function convertToFahrenheit(celsius) {
-                
+                fahrenheit =  celsius * 9/5 + 32;
+                return fahrenheit;
             }
+            console.log(convertToFahrenheit(25));
+
+
+            function convertToCelsius(fahrenheit) {
+                celsius = (fahrenheit - 32) * 5/9;
+                return celsius;
+            }
+            console.log(convertToCelsius(86));
+
+
+            function convertTemperature(degree, unit) {
+                if (unit === "C") {
+                    return convertToFahrenheit(degree);
+                } else if (unit === "F") {
+                    return convertToCelsius(degree);
+                } else {
+                    return "Invalid unit";
+                }
+
+            }
+
+            console.log(convertTemperature(25, "C")); 
+            console.log(convertTemperature(86, "F")); 
+            console.log(convertTemperature(100, "K")); 
+
+
+           // exercise 7g - 7i
+
+
+    
+           // challenge exercises
+
+           
+
+
         </script>
 </html>
