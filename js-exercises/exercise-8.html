@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 8</title>
+</head>
+<body>
+
+    <script>
+        // 8a
+        const product = {
+            name: "basketball",
+            price: 2095
+        }
+
+        console.log(product);
+
+        // 8b
+        product.price += 500;
+        console.log(product.price);
+
+        // 8c
+        product["delivery-time"] ="3 days";
+        console.log(product);
+
+        // 8d
+            const product1 = {
+            name: 'basketball',
+            price: 2095
+        };
+
+        const product2 = {
+            name: 'socks',
+            price: 1090
+        };
+
+        function comparePrice(product1, product2){
+            if (product1.price < product2.price) {
+                return `${product1.name} is cheaper than ${product2.name}`;
+            } else if (product1.price > product2.price) {
+                return `${product1.name} is more expensive than ${product2.name}`;
+            } else {
+                return `${product1.name} and ${product2.name} have the same price`;
+            }
+        }
+
+        console.log(comparePrice(product1, product2));
+
+        // 8e
+            const product11 = {
+            name: 'basketball',
+            price: 2095
+        };
+
+        const product21 = {
+            name: 'socks',
+            price: 1090
+        };
+
+            function isSameProduct(product11, product21) {
+                return product1.name === product2.name && product1.price === product2.price;
+            };
+            console.log(isSameProduct(product1, product2));
+
+        // 8f
+        const greet = "GOOD MORNING";
+        console.log(greet.toLowerCase());
+
+        // 8g
+        const word = "test";
+        console.log(word.repeat(2));
+
+        // 8h
+        // copy of exercise 7g
+         function convertLength(length, from, to) {
+        if (from === 'km' && to === 'miles') {
+          return `${length / 1.6} miles`;
+        } else if (from === 'miles' && to === 'km') {
+          return `${length * 1.6} km`;
+
+        // You can also do if (from === 'km' && to === 'km) { ... }
+        // if (from === to) is a trick you can use to save some code.
+        } else if (from === to) {
+          return `${length} ${to}`;
+        }
+      }
+
+      console.log(convertLength(50, 'miles', 'km'));
+      console.log(convertLength(32, 'km', 'miles'));
+      console.log(convertLength(50, 'km', 'km'));
+
+
+            </script>
+    
+</body>
+</html>
