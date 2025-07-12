@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
         <head>
@@ -106,14 +107,118 @@ console.log(convertLength(5, 'km', 'ft'));
 
 console.log(convertLength(5, "ibs", "ib"));
 
+-->
     
-           // challenge exercises
+ //challenge exercises
 //   7j - 7k
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 5 - calculator</title>
+</head>
+<body>
+<div class="calc-body">
+    <button onclick="
+        calculation += '1';
+        console.log(calculation);
+        ">1</button>
 
+    <button onclick="
+    calculation += '2';
+    console.log(calculation);
+    ">2</button>
 
+    <button onclick="
+    calculation += '3';
+    console.log(calculation);
+    ">3</button>
 
-           
+<br><br>
 
+    <button onclick="
+    calculation += '4';
+    console.log(calculation);
+    ">4</button>
 
-        </script>
+    <button onclick="
+    calculation += '5';
+    console.log(calculation);
+    ">5</button>
+
+    <button onclick="
+    calculation += '6';
+    console.log(calculation);
+    ">6</button>
+
+<br><br>
+
+    <button onclick="
+    calculation += '7';
+    console.log(calculation);
+    ">7</button>
+
+    <button onclick="
+    calculation += '8';
+    console.log(calculation);
+    ">8</button>
+
+    <button onclick="
+    calculation += '9';
+    console.log(calculation);
+    ">9</button>
+
+    <button onclick="
+    calculation += '.';
+    console.log(calculation);
+    ">.</button>
+
+<br><br>
+
+    <button onclick="
+    calculation += '+';
+    console.log(calculation);
+    ">+</button>
+
+<!--when '=' is clicked, use the code eval(calculation); eval(...) converts the calculation string into actual maths-->
+    <button onclick="
+    giveanswer();
+    ">=</button>
+
+    <button onclick="
+    calculation = '';
+    console.log(calculation);
+    console.log('cleared!!')
+    ">Clear</button>
+
+</div>
+<div id="ans"></div>
+
+<style>
+    .calc-body{
+        text-align: center;
+    }
+
+    button{
+        font-size: 20px;
+        padding: 25px;
+        margin: 3px;
+        background-color: rgb(183, 178, 178);
+    }
+</style>
+
+    <script>
+        let calculation = '';
+      
+        function giveanswer(){
+            calculation = eval(calculation);
+            console.log(calculation);
+        
+        }
+        
+
+    </script>
+    
+</body>
 </html>
